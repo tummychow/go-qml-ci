@@ -8,7 +8,7 @@ before_install:
   - sudo apt-get update
   - sudo apt-get install ubuntu-sdk qtbase5-private-dev qtdeclarative5-private-dev libqt5opengl5-dev
 
-script: "go build main.go ; sudo xvfb-run -e /dev/stdout ./particle"
+script: "go build main.go; sudo xvfb-run -e /dev/stdout ./main"
 
 notifications:
   email: false
