@@ -12,7 +12,7 @@ before_install:
   - sudo apt-get update
   - sudo apt-get install ubuntu-sdk qtbase5-private-dev qtdeclarative5-private-dev libqt5opengl5-dev
 
-script: ./build.sh
+script: "go build -v -o particle main.go && ./run.sh"
 
 notifications:
   email: false
