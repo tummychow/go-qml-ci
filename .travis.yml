@@ -4,11 +4,15 @@ go:
   - 1.2
 
 before_install:
+  - sudo cp xvfb.init /etc/init.d/xvfb
+  - sudo chmod +x /etc/init.d/xvfb
+  - export DISPLAY=:99.0
+  - sudo sh -e /etc/init.d/xvfb start
   - sudo add-apt-repository -y ppa:ubuntu-sdk-team/ppa
   - sudo apt-get update
   - sudo apt-get install ubuntu-sdk qtbase5-private-dev qtdeclarative5-private-dev libqt5opengl5-dev
 
-script: "go build main.go; sudo xvfb-run -e /dev/stdout ./main"
+script: "go run main.go"
 
 notifications:
   email: false
