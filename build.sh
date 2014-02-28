@@ -1,6 +1,8 @@
-#!/bin/sh
+#!/bin/bash -e
 
-go build -o particle main.go
+set -x
+go build -v -o particle main.go
+set +x
 ./particle &
 sleep 10
 kill $(ps aux | awk '/[p]article/ {print $2}')
