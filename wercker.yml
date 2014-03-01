@@ -25,7 +25,7 @@ build:
         code: |
           cd $WERCKER_SOURCE_DIR
           go version
-          go get -u -v
+          go get -u -v github.com/niemeyer/qml
 
     - script:
         name: go build
