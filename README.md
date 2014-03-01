@@ -1,6 +1,6 @@
 # Continuous Integration with QML in Go
 
-[![Travis](https://travis-ci.org/tummychow/go-qml-ci.png?branch=master)](https://travis-ci.org/tummychow/go-qml-ci) [![Drone](https://drone.io/github.com/tummychow/go-qml-ci/status.png)](https://drone.io/github.com/tummychow/go-qml-ci/latest)
+[![Travis](https://travis-ci.org/tummychow/go-qml-ci.png?branch=master)](https://travis-ci.org/tummychow/go-qml-ci) [![Drone](https://drone.io/github.com/tummychow/go-qml-ci/status.png)](https://drone.io/github.com/tummychow/go-qml-ci/latest) [![wercker](https://app.wercker.com/status/1f7c3aff0858eb5163b47f55105f8200/s/ "wercker status")](https://app.wercker.com/project/bykey/1f7c3aff0858eb5163b47f55105f8200)
 
 An experiment to set up continuous integration services with [niemeyer/qml](http://github.com/niemeyer/qml). I'm planning some projects with this library so I'm going to get the CI stuff out of the way on a repo that doesn't actually have anything useful in it. Then, when I actually want to make stuff, I'll already know how to set up CI for my projects.
 
