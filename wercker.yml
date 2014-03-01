@@ -23,10 +23,12 @@ build:
     - script:
         name: go get
         code: |
+          cd $WERCKER_SOURCE_DIR
           go version
           go get -u -v
 
     - script:
         name: go build
         code: |
+          cd $WERCKER_SOURCE_DIR
           go build -v -o particle main.go && ./run.sh
