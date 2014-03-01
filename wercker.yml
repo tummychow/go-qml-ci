@@ -2,7 +2,6 @@ box: wercker/golang
 
 build:
   steps:
-    - setup-go-workspace
 
     - script:
         name: xvfb
@@ -25,7 +24,7 @@ build:
         code: |
           cd $WERCKER_SOURCE_DIR
           go version
-          go get -u -v github.com/niemeyer/qml
+          go get -v
 
     - script:
         name: go build
