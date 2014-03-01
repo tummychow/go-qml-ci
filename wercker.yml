@@ -24,7 +24,7 @@ build:
         name: go get
         code: |
           go version
-          go get -u -v ./...
+          go get -u -v
 
     - script:
         name: go build
