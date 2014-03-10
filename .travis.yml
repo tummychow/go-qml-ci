@@ -2,6 +2,7 @@ language: go
 
 go:
   - 1.2
+  - 1.2.1
 
 before_install:
   - sudo cp xvfb.init /etc/init.d/xvfb
